@@ -24,7 +24,7 @@
     display: grid;
     /* grid-template: 1fr 4fr / 1fr 4fr; */
     gap: 20px;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     /* grid-template-rows: auto auto; */
     /* grid-template-areas: 
     'sidebar header'
@@ -39,7 +39,7 @@
     grid-column: 1;
     grid-row: 1 / span 2;
     /* grid-area: sidebar; */
-    /* height: 100vh;  */
+    height: 100vh; 
 }
 
 .header {
@@ -80,3 +80,7 @@ li {
     grid-row: 10;
     grid-column: 1;
 }
+
+/* .sidebar-container > h1 {
+    text-align: center;
+} */
