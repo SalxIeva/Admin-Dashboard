@@ -7,7 +7,7 @@
 .source-serif-4-type {
     font-family: "Source Serif 4", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
   }
 
@@ -55,6 +55,28 @@
     /* grid-area: main; */
 }
 
-p {
+li {
     font-family: "Source Serif 4", serif;
+    list-style-type: none;
+}
+
+.dashboard-ul {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    gap: 20px;
+}
+
+.info1 {
+    grid-row: 8;
+    grid-column: 1;
+}
+
+.info2 {
+    grid-row: 9;
+    grid-column: 1;
+}
+
+.info3 {
+    grid-row: 10;
+    grid-column: 1;
 }
