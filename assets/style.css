@@ -177,13 +177,20 @@
 
 .selection {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: 0.5fr;
     justify-items: center;
     align-items: center;
+    padding-left: 10em;
+    padding-right: 2em;
 }
 
 .selection-item {
     background-color: var(--mainBack);
     padding: 0.5em 2em;
     border-radius: 25px;
+    color: white;
+    font-family: var(--smallFont);
+    font-weight: 600;
+    cursor: pointer;
 }
