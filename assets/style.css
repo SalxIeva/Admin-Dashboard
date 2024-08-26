@@ -122,10 +122,19 @@
         font-size: 2vw;
     }
 
-    .account-holder .material-symbols-outlined {
+    .account-holder .material-symbols-outlined,
+    .account-search .material-symbols-outlined,
+    .account-holder svg {
         color: rgb(9, 44, 43);
         padding-right: 1vw;
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
-    
+    .account-search {
+        padding-left: 1em;
+    }
+    .account-search input {
+        width: 70%;
+        border-radius: 10px;
+        padding-left: 1em;
+    }
