@@ -23,22 +23,34 @@
     font-style: normal;
   }
 
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    overflow: hidden;
+}
+
 .container {
     display: grid;
     /* gap: 20px; */
     grid-template: 1fr 5fr / 1fr 5fr;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.grid-item {
+/* .grid-item {
     border: 2px solid red;
-}
+} */
 
 .sidebar {
     grid-column: 1;
     grid-row: 1 / span 2;
-    height: 97vh; 
+    height: 100%; 
     background-color: var(--mainBack);
     justify-items: start;
+    position: sticky;
+    top: 0;
 }
 
 .header {
@@ -46,6 +58,7 @@
     grid-row: 1;
     font-family: var(--bigFont);
     box-shadow: 0 4px 2px -2px gray;
+    background-color: rgb(232, 244, 243);
 }
 
 .main {
@@ -180,24 +193,6 @@
     font-family: var(--bigFont);
 }
 
-.selection {
-    display: grid;
-    grid-template-columns: repeat(3 0.5fr);
-    grid-template-rows: 0.5fr;
-    justify-items: center;
-    align-items: center;
-    padding-left: 10em;
-    padding-right: 2em;
-}
-
-.selection-item {
-    background-color: var(--mainBack);
-    padding: 0.5em 2em;
-    border-radius: 25px;
-    color: white;
-    font-family: var(--smallFont);
-    font-weight: 600;
-}
 
 .selection-item:hover {
     background-color: var(--hoover);
@@ -209,4 +204,24 @@
 .account-search span,
 li {
     cursor: pointer;
+}
+
+.selection {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: 0.5fr;
+    justify-items: center;
+    align-items: center;
+    padding-left: 10em;
+    padding-right: 2em;
+}
+
+.selection-item {
+    background-color: var(--mainBack);
+    padding: 0.5em 2em;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-family: var(--smallFont);
+    font-weight: 600;
 }
