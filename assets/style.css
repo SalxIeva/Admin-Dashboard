@@ -7,7 +7,7 @@
 .source-serif-4-type {
     font-family: "Source Serif 4", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 800;
     font-style: normal;
   }
 
@@ -24,8 +24,7 @@
     display: grid;
     /* grid-template: 1fr 4fr / 1fr 4fr; */
     gap: 20px;
-    grid-template-columns: 1fr 5fr;
-    /* grid-template-rows: auto auto; */
+    grid-template: 1fr 5fr / 1fr 5fr;
     /* grid-template-areas: 
     'sidebar header'
     'sidebar main'; */
@@ -39,7 +38,8 @@
     grid-column: 1;
     grid-row: 1 / span 2;
     /* grid-area: sidebar; */
-    height: 100vh; 
+    height: 97vh; 
+    background-color: rgb(36, 164, 250);
 }
 
 .header {
@@ -58,6 +58,9 @@
 li {
     font-family: "Source Serif 4", serif;
     list-style-type: none;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 .dashboard-ul {
@@ -84,3 +87,14 @@ li {
 /* .sidebar-container > h1 {
     text-align: center;
 } */
+
+.material-symbols-outlined {
+    color: white;
+}
+
+.sidebar-container > h1 {
+    text-align:center;
+    color: white;
+    /* display: flex;
+    align-items: center; */
+}
