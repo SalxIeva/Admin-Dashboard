@@ -81,9 +81,7 @@
     }
     
     .sidebar-container > h1 {
-        /* text-align:center; */
         color: white;
-        /* padding-left: 1em; */
         padding-bottom: 1em;
         display: flex;
         align-items: center;
@@ -134,3 +132,14 @@
         padding-left: 2vw;
         font-family: var(--smallFont);
     }
+
+    .title-bar {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .selection-item {
+        color: black;
+    }
+
+    
