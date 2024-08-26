@@ -116,11 +116,16 @@
         display: grid;
         grid-template-columns: 3fr 1fr;
     }
-    .account-holder {
+    .account-holder, .account-search {
         display: flex;
         align-items: center;
+        font-size: 2vw;
     }
 
     .account-holder .material-symbols-outlined {
-        color: blue;
+        color: rgb(9, 44, 43);
+        padding-right: 1vw;
+        font-size: 3vw;
     }
+
+    
