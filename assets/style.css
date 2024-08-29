@@ -225,3 +225,26 @@ li {
     font-family: var(--smallFont);
     font-weight: 600;
 }
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-container {
+    grid-column: 1;
+    grid-row: span 2;
+    
+}
+
+.assesments {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.trending {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+}
