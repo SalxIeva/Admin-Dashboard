@@ -262,7 +262,6 @@ li {
 
 .card-container {
     grid-auto-columns: minmax(150px, 1fr);
-    /* background-color: rgb(250, 242, 242); */
     background-image: linear-gradient(rgb(250, 242, 242), rgb(117, 142, 157));
     color: var(--darker);
     box-shadow: 0 8px 9px rgba(0, 0, 0, 0.5);
@@ -282,4 +281,16 @@ li {
     margin: 0;
     margin-left: 10px;
     padding: 0;
+}
+
+.about {
+    display: flex;
+    justify-items: flex-start;
+    flex-flow: column;
+    padding: 15px 5px;
+}
+
+.about > h3, .about > p {
+    padding: 0;
+    margin: 0;
 }
