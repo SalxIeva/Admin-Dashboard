@@ -287,7 +287,8 @@ li {
     display: flex;
     justify-items: flex-start;
     flex-flow: column;
-    padding: 15px 5px;
+    padding: 15px 5px 0 5px;
+
 }
 
 .about > h3, .about > p {
@@ -298,6 +299,7 @@ li {
 .icons {
     display: flex;
     justify-content: flex-end;
+    margin-top: auto;
 }
 
 .icons svg {
