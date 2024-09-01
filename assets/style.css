@@ -294,3 +294,12 @@ li {
     padding: 0;
     margin: 0;
 }
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons svg {
+    padding: 15px;
+}
