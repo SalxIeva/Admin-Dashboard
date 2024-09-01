@@ -281,6 +281,8 @@ li {
     margin: 0;
     margin-left: 10px;
     padding: 0;
+    font-family: var(--bigFont);
+    color: var(--darker);
 }
 
 .about {
@@ -304,4 +306,15 @@ li {
 
 .icons svg {
     padding: 15px;
+}
+
+.about > h3 {
+    font-family: var(--bigFont);
+    color: var(--darker);
+    font-weight: 600;
+}
+
+.about > p {
+    font-family: var(--smallFont);
+    font-size: 13px;
 }
