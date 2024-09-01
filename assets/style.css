@@ -36,7 +36,6 @@ html {
 
 .container {
     display: grid;
-    /* gap: 20px; */
     grid-template: 1fr 5fr / 1fr 5fr;
     height: 100vh;
     overflow: hidden;
@@ -241,10 +240,10 @@ li {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-template-rows: 60px 1fr 1fr 1fr;
     width: 100%;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     justify-items: center;
-    padding: 0;
+    /* padding: 10px; */
 }
 
 
@@ -265,13 +264,15 @@ li {
 
 .card-container {
     grid-auto-columns: minmax(150px, 1fr);
-    background-color: rgb(250, 242, 242);
+    /* background-color: rgb(250, 242, 242); */
+    background-image: linear-gradient(rgb(250, 242, 242), rgb(117, 142, 157));
     color: var(--darker);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     height: 200px;
     width: 280px;
     display: flex;
+    
 }
 
 .main-container > h2 {
@@ -279,9 +280,11 @@ li {
     grid-row: 1;
     display: flex;
     justify-content: flex-start;
-    align-content: flex-end;
+    align-items: flex-end;
     width: 100%;
-    margin-left: 50px;
-    padding: 20px;
-    height: fit-content;
+    /* margin-left: 50px; */
+    /* padding: 20px; */
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
