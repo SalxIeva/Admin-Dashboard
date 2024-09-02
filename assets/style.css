@@ -141,11 +141,11 @@ html {
         width: 70%;
         border-radius: 10px;
         padding-left: 1em;
-        background-color: rgb(202, 202, 202);
+        background-color: rgb(236, 233, 233);
     }
 
     .account-search input:hover {
-        background-color: rgb(160, 160, 160);
+        background-color: rgb(204, 202, 202);
     }
 
     .account-holder p {
@@ -317,4 +317,24 @@ li {
 .about > p {
     font-family: var(--smallFont);
     font-size: 13px;
+}
+
+
+.assesments {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0;
+    height: 40vh;
+}
+
+.assesment {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.assesment > h3, .assesment > p {
+    margin: 0;
+    padding: 0;
 }
