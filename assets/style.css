@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap'); 
+
+
 :root {
     --smallFont: "Source Serif 4", serif;
     --bigFont: "Moderustic", sans-serif;
     --mainBack: rgb(81, 143, 160);
     --hoover: rgb(37, 72, 82);
+    --darker: rgb(9, 44, 43);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 .source-serif-4-type {
     font-family: "Source Serif 4", serif;
@@ -13,8 +18,6 @@
     font-weight: 900;
     font-style: normal;
   }
-
-  @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap'); 
 
 .moderustic-type {
     font-family: "Moderustic", sans-serif;
@@ -33,7 +36,6 @@ html {
 
 .container {
     display: grid;
-    /* gap: 20px; */
     grid-template: 1fr 5fr / 1fr 5fr;
     height: 100vh;
     overflow: hidden;
@@ -127,7 +129,7 @@ html {
 
     .account-holder .material-symbols-outlined,
     .account-search .material-symbols-outlined {
-        color: rgb(9, 44, 43);
+        color: var(--darker);
         padding-right: 1vw;
         font-size: 2vw;
     }
@@ -139,11 +141,11 @@ html {
         width: 70%;
         border-radius: 10px;
         padding-left: 1em;
-        background-color: rgb(202, 202, 202);
+        background-color: rgb(236, 233, 233);
     }
 
     .account-search input:hover {
-        background-color: rgb(160, 160, 160);
+        background-color: rgb(204, 202, 202);
     }
 
     .account-holder p {
@@ -193,7 +195,6 @@ html {
     font-family: var(--bigFont);
 }
 
-
 .selection-item:hover {
     background-color: var(--hoover);
 }
@@ -229,22 +230,159 @@ li {
 .main {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    /* padding: 40px; */
 }
 
 .main-container {
     grid-column: 1;
     grid-row: span 2;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: 40px 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
 }
 
+
 .assesments {
-    display: grid;
     grid-column: 2;
     grid-row: 1;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .trending {
-    display: grid;
     grid-column: 2;
     grid-row: 2;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    
+}
+
+.card-container {
+    grid-auto-columns: minmax(150px, 1fr);
+    background-image: linear-gradient(rgb(250, 242, 242), rgb(117, 142, 157));
+    color: var(--darker);
+    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: 0 10px 10px 10px;
+}
+
+.main-container > h2 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    font-family: var(--bigFont);
+    color: var(--darker);
+}
+
+.about {
+    display: flex;
+    justify-items: flex-start;
+    flex-flow: column;
+    padding: 15px 5px 0 5px;
+
+}
+
+.about > h3, .about > p {
+    padding: 0;
+    margin: 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.icons svg {
+    padding: 15px;
+}
+
+.about > h3 {
+    font-family: var(--bigFont);
+    color: var(--darker);
+    font-weight: 600;
+}
+
+.about > p {
+    font-family: var(--smallFont);
+    font-size: 13px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+.assesments, .trending {
+    padding: 20px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    margin-bottom: 2px;
+}
+
+.assesments {
+    border-bottom: 1px solid var(--hoover);
+}
+
+.assesment {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.assesment > h4, .assesment > p {
+    margin: 0;
+    padding: 0;
+    color: var(--darker);
+}
+
+.assesment > h4 {
+    font-family: var(--bigFont);
+    font-weight: 600;
+}
+
+.assesment > p {
+    font-family: var(--smallFont);
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.assesment:not(:last-child) {
+    border-bottom: 1px solid var(--hoover);
+}
+
+.hours {
+    font-weight: 800;
+    font-style: italic;
+}
+
+.trending .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.trending .pic img {
+    margin-right: 10px;
+}
+
+.trending .description > h4, 
+.trending .description > p {
+    padding: 0;
+    margin: 0;
 }
