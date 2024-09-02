@@ -41,9 +41,9 @@ html {
     overflow: hidden;
 }
 
-/* .grid-item {
+.grid-item {
     border: 2px solid red;
-} */
+}
 
 .sidebar {
     grid-column: 1;
@@ -361,4 +361,7 @@ li {
     border-bottom: 1px solid var(--hoover);
 }
 
-
+.hours {
+    font-weight: 800;
+    font-style: italic;
+}
