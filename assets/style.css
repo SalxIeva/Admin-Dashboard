@@ -305,6 +305,7 @@ li {
 
 .icons svg {
     padding: 15px;
+    cursor: pointer;
 }
 
 .about > h3 {
@@ -379,6 +380,7 @@ li {
 
 .trending .pic img {
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .trending .description > h4, 
