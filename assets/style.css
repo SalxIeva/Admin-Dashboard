@@ -41,9 +41,9 @@ html {
     overflow: hidden;
 }
 
-.grid-item {
+/* .grid-item {
     border: 2px solid red;
-}
+} */
 
 .sidebar {
     grid-column: 1;
@@ -318,19 +318,23 @@ li {
     font-size: 13px;
 }
 
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+.assesments, .trending {
+    padding: 20px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    margin-bottom: 2px;
+}
 
 .assesments {
-    /* display: grid;
-    grid-template-rows: 1fr 1fr 1fr; */
-    padding: 0 30px;
-    box-shadow:  0 8px 9px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
     border-bottom: 1px solid var(--hoover);
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column;
-    height: 30vh;
-    padding: 10px;
 }
 
 .assesment {
@@ -340,6 +344,7 @@ li {
     padding: 0;
     margin: 0;
 }
+
 .assesment > h4, .assesment > p {
     margin: 0;
     padding: 0;
@@ -364,4 +369,20 @@ li {
 .hours {
     font-weight: 800;
     font-style: italic;
+}
+
+.trending .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.trending .pic img {
+    margin-right: 10px;
+}
+
+.trending .description > h4, 
+.trending .description > p {
+    padding: 0;
+    margin: 0;
 }
