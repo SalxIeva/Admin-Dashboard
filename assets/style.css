@@ -321,10 +321,16 @@ li {
 
 
 .assesments {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0;
-    height: 40vh;
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr; */
+    padding: 0 30px;
+    box-shadow:  0 8px 9px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border-bottom: 1px solid var(--hoover);
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+    height: 30vh;
 }
 
 .assesment {
@@ -334,7 +340,23 @@ li {
     padding: 0;
     margin: 0;
 }
-.assesment > h3, .assesment > p {
+.assesment > h4, .assesment > p {
     margin: 0;
     padding: 0;
+    color: var(--darker);
+}
+
+.assesment > h4 {
+    font-family: var(--bigFont);
+    font-weight: 600;
+}
+
+.assesment > p {
+    font-family: var(--smallFont);
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.assesment:not(:last-child) {
+    border-bottom: 1px solid var(--hoover);
 }
