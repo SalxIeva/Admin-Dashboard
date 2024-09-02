@@ -195,7 +195,6 @@ html {
     font-family: var(--bigFont);
 }
 
-
 .selection-item:hover {
     background-color: var(--hoover);
 }
@@ -331,6 +330,7 @@ li {
     justify-content: space-around;
     flex-flow: column;
     height: 30vh;
+    padding: 10px;
 }
 
 .assesment {
@@ -360,3 +360,5 @@ li {
 .assesment:not(:last-child) {
     border-bottom: 1px solid var(--hoover);
 }
+
+
